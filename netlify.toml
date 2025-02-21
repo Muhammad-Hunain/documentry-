@@ -1,5 +1,5 @@
 [build]
-  command = "pip install mkdocs && mkdocs build"
+  command = "pip install --user mkdocs && ~/.local/bin/mkdocs build"
   publish = "site"
 [build.environment]
-  PYTHON_VERSION = "3.8"
+  PYTHON_VERSION = "3.12.0"
