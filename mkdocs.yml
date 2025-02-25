@@ -1,19 +1,24 @@
 site_name: AppAmbit
 theme:
   name: material
-palette:
-    scheme: slate  # Enables dark mode
-    primary: deep purple
-    accent: amber
+  custom_dir: docs/custom_theme
+  logo: images/logo.png
+  favicon: images/logo.png
+  text: "Go to Website"
+  palette:
+    scheme: slate  # This provides a dark background
+    primary: custom  # We'll define this custom color in extra.css
+    accent: orange
+    
    
 features:
-    - content.code.copy
-    - content.code.annotate
-    - navigation.tabs
-    - navigation.sections
+  - content.code.copy
+  - content.code.annotate
+  - navigation.tabs
+  - navigation.sections
 
 extra_css:
-  - Stylesheets/extra.css
+  - stylesheets/extra.css
 
 markdown_extensions:
   - pymdownx.highlight
@@ -23,10 +28,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.keys
 
-
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js
-
+  
 nav:
   - Introduction: index.md
   - Rest:
@@ -36,6 +40,5 @@ nav:
       - Crash Detection: NetMAUI/crashDetection.md
       - Logging: NetMAUI/logging.md
       - Analytics: NetMAUI/Analytics.md
-  - Flutter (CommingSoon): features/web-app.md
-  - React Native (Comming Soon): features/web-app.md
-      
+  - Flutter (Coming Soon): features/web-app.md
+  - React Native (Coming Soon): features/web-app.md

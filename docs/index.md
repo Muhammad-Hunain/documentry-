@@ -1,6 +1,3 @@
-
-
-
 # Let's build from here
 
 Build, maintain, test, and distribute your mobile apps. Let your clients manage their content.
@@ -57,6 +54,12 @@ AppAmbit aims to be fast, simple, and quick in delivering what you need when it 
 </div>
 
 <style>
+.md-typeset h1, 
+.md-typeset h2,
+.md-typeset h3 {
+  color: #ffffff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -83,6 +86,7 @@ nav {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .btn-primary {
@@ -92,9 +96,11 @@ nav {
 
 .btn-secondary {
   background-color: transparent;
-  color: #ffffff;
+  color: #ffffff !important;
   border: 1px solid #ffffff;
 }
+
+
 
 .cta-buttons {
   display: flex;
@@ -103,6 +109,8 @@ nav {
 }
 
 .hero-image {
+  border:1px solid #FF6B00;
+  box-shadow: 4px 4px 4px #FF6B00;
   margin-top: 2rem;
   text-align: center;
 }
@@ -117,23 +125,30 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  
 }
 
 .feature {
   background-color: #2a2a2a;
-  color :#ffffff;
+  color: #ffffff;
   padding: 1.5rem;
   border-radius: 8px;
+   border:1px solid #FF6B00;
+  box-shadow: 4px 4px 4px #FF6B00;
 }
 
 .office-images {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  
 }
 
 .office-image {
   width: 48%;
   height: auto;
+   border:1px solid #FF6B00;
+  box-shadow: 4px 4px 4px #FF6B00;
 }
+
 </style>
