@@ -1,0 +1,115 @@
+:root {
+  --md-primary-fg-color: #FF6B00;
+  --md-primary-fg-color--light: #FF6B00;
+  --md-primary-fg-color--dark: #FF6B00;
+  --md-accent-fg-color: #FF6B00;
+}
+
+.md-typeset a {
+  color: #FF6B00;
+}
+
+.md-typeset a:hover {
+  color: #FF8C3D;
+}
+
+.md-nav__item .md-nav__link--active {
+  color: #FF6B00;
+}
+
+.md-search__input {
+  background-color: rgba(255, 107, 0, 0.1);
+}
+
+.md-search__input::placeholder {
+  color: rgba(255, 107, 0, 0.5);
+}
+
+.md-search__input:hover {
+  background-color: rgba(255, 107, 0, 0.2);
+}
+
+.md-typeset .md-button {
+  border-color: #FF6B00;
+  color: #FF6B00;
+}
+
+.md-typeset .md-button:is(:focus, :hover) {
+  background-color: #FF6B00;
+  border-color: #FF6B00;
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset .md-button--primary {
+  background-color: #FF6B00;
+  border-color: #FF6B00;
+  color: var(--md-primary-bg-color);
+}
+
+.md-typeset .md-button--primary:is(:focus, :hover) {
+  background-color: #FF8C3D;
+  border-color: #FF8C3D;
+}
+
+/* Professional code block styling for black background */
+.code-block {
+  background-color: #000; /* Pure black background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.code-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111; /* Darker black for contrast */
+  padding: 8px 16px;
+  color: #ddd; /* Light gray for better visibility */
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.code-nav-left {
+  font-weight: bold;
+}
+
+.code-nav-right button {
+  background: none;
+  border: none;
+  color: #ddd; /* Light gray for readability */
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.code-nav-right button:hover {
+  color: #fff; /* White on hover for better interaction feedback */
+}
+
+.code-nav-right button::before {
+  content: "📋";
+  margin-right: 5px;
+}
+
+.code-content {
+  padding: 16px;
+  margin: 0;
+  overflow-x: auto;
+  background-color: #000; /* Ensuring content area also has black background */
+}
+
+.code-content code {
+  font-family: monospace;
+  white-space: pre;
+  display: block;
+  color: #0f0; /* Green text for a classic terminal look */
+}
+
+.md-header {
+  background-color: #000;
+}
