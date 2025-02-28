@@ -113,3 +113,35 @@
 .md-header {
   background-color: #000;
 }
+
+
+.md-header-nav__title {
+  display: none;
+}
+
+.md-header__topic {
+
+display: none;
+}
+
+/* Increase the size of the logo */
+.md-header__button.md-logo {
+  height: 50px;  /* Adjust the height as needed */
+  max-height: 50px;
+  margin-bottom: 20px !important;
+
+}
+
+.md-header__button.md-logo img {
+  height: 50px;
+  width: auto;  /* Maintains the aspect ratio */
+}
+
+
+
+
+
+
+
+
+

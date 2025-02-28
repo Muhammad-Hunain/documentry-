@@ -68,14 +68,7 @@ AppAmbit aims to be fast, simple, and quick in delivering what you need when it 
   background-color: #1a1a1a;
 }
 
-.logo {
-  height: 40px;
-}
 
-nav {
-  display: flex;
-  gap: 1rem;
-}
 
 .nav-link {
   color: #ffffff;
@@ -99,8 +92,6 @@ nav {
   color: #ffffff !important;
   border: 1px solid #ffffff;
 }
-
-
 
 .cta-buttons {
   display: flex;
@@ -150,5 +141,7 @@ nav {
    border:1px solid #FF6B00;
   box-shadow: 4px 4px 4px #FF6B00;
 }
+
+
 
 </style>

@@ -9,21 +9,25 @@
       
       
       
+        <link rel="prev" href="../..">
       
       
-      <link rel="icon" href="/images/logo.png">
+        <link rel="next" href="../../Rest/consumer/">
+      
+      
+      <link rel="icon" href="../../images/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
-        <title></title>
+        <title>Authenticating requests - </title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -42,9 +46,9 @@
       
     
     
-      <link rel="stylesheet" href="/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#authentication" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -79,9 +88,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-header__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="/images/logo-bright.svg" alt="logo">
+  <img src="../../images/logo-bright.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Authenticating requests
             
           </span>
         </div>
@@ -173,9 +182,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
+    <a href="../.." title="" class="md-nav__button md-logo" aria-label="" data-md-component="logo">
       
-  <img src="/images/logo-bright.svg" alt="logo">
+  <img src="../../images/logo-bright.svg" alt="logo">
 
     </a>
     
@@ -190,7 +199,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -208,17 +217,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -233,7 +244,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Rest
@@ -244,10 +255,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/Authentication/auth/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Authenticating requests
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -257,6 +289,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authenticating-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authenticating Requests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authenticating Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-your-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieving Your Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -305,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Rest/consumer/" class="md-nav__link">
+      <a href="../../Rest/consumer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -327,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Rest/post_log/" class="md-nav__link">
+      <a href="../../Rest/post_log/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -349,7 +434,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Rest/post_session_start/" class="md-nav__link">
+      <a href="../../Rest/post_session_start/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -371,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Rest/post_session_end/" class="md-nav__link">
+      <a href="../../Rest/post_session_end/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -393,7 +478,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Rest/Analytics/" class="md-nav__link">
+      <a href="../../Rest/Analytics/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -466,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/NetMAUI/getting/" class="md-nav__link">
+      <a href="../../NetMAUI/getting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -488,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/NetMAUI/crashDetection/" class="md-nav__link">
+      <a href="../../NetMAUI/crashDetection/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -510,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/NetMAUI/logging/" class="md-nav__link">
+      <a href="../../NetMAUI/logging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/NetMAUI/Analytics_MAUI/" class="md-nav__link">
+      <a href="../../NetMAUI/Analytics_MAUI/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/features/web-app.md" class="md-nav__link">
+      <a href="../../features/web-app.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -582,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/features/web-app.md" class="md-nav__link">
+      <a href="../../features/web-app.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -613,6 +698,49 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#authenticating-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authenticating Requests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authenticating Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retrieving-your-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Retrieving Your Token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Request
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -624,8 +752,77 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<style>
+
+/* Custom badge for authentication */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.375rem;
+  vertical-align: middle;
+}
+
+.badge-auth {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.badge-auth::before {
+  content: "";
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin-right: 0.25rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%233b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Code block styling */
+.md-typeset pre > code {
+  border-radius: 0.375rem;
+}
+
+/* Admonition styling */
+.md-typeset .admonition {
+  font-size: 0.8rem;
+}
+
+
+</style>
+<h1 id="authentication">Authentication</h1>
+<h2 id="authenticating-requests">Authenticating Requests</h2>
+<p>To authenticate requests, include an <code>Authorization</code> header with the value <code>"Bearer {YOUR_AUTH_KEY}"</code>.</p>
+<p>!!! info
+    All authenticated endpoints are marked with a <span class="badge badge-auth">requires authentication</span> badge in the documentation below.</p>
+<h3 id="retrieving-your-token">Retrieving Your Token</h3>
+<p>You can retrieve your token by visiting your dashboard and clicking <strong>Generate API token</strong>.</p>
+<h3 id="example-request">Example Request</h3>
+<p>```bash
+curl -X GET \
+  https://api.example.com/v1/users \
+  -H "Authorization: Bearer your_api_token_here"</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -659,10 +856,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": [], "search": "/assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
       

@@ -1,16 +1,14 @@
-site_name: AppAmbit
+site_name: ""  # This removes the site name from the header
 theme:
   name: material
   custom_dir: docs/custom_theme
-  logo: images/logo.png
+  logo: images/logo-bright.svg
   favicon: images/logo.png
-  text: "Go to Website"
   palette:
-    scheme: slate  # This provides a dark background
-    primary: custom  # We'll define this custom color in extra.css
+    scheme: slate  # Dark background
+    primary: custom  # Custom color defined in extra.css
     accent: orange
-    
-   
+
 features:
   - content.code.copy
   - content.code.annotate
@@ -34,11 +32,17 @@ extra_javascript:
 nav:
   - Introduction: index.md
   - Rest:
-      - Api: Rest/api.md
+      - Authenticating requests: Authentication/auth.md
+      - Endpoints:
+          Register: Rest/consumer.md
+          Logging: Rest/post_log.md
+          Sart Session: Rest/post_session_start.md
+          End Session: Rest/post_session_end.md
+          Analytics: Rest/Analytics.md
   - NetMAUI:
-      - Getting Start: NetMAUI/getting.md
+      - Getting Started: NetMAUI/getting.md
       - Crash Detection: NetMAUI/crashDetection.md
       - Logging: NetMAUI/logging.md
-      - Analytics: NetMAUI/Analytics.md
+      - Analytics: NetMAUI/Analytics_MAUI.md
   - Flutter (Coming Soon): features/web-app.md
   - React Native (Coming Soon): features/web-app.md
